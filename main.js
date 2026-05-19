@@ -201,7 +201,6 @@ document.addEventListener("DOMContentLoaded", function () {
   // Добавляем классы для стилизации цифр таймера
   const timer = document.querySelector(".sinoby-timer");
   if (timer) {
-    // Наблюдаем за появлением цифр
     const observer = new MutationObserver(function () {
       const digits = document.querySelectorAll(".sinoby-digit");
       digits.forEach((digit) => {
@@ -217,17 +216,17 @@ const colorVariantsM6 = [
     {
         id: "black",
         swatchColor: "#1a1a1a",
-        imageUrl: "img/черный-неметаллик.png",
+        imageUrl: "/Haval/img/черный-неметаллик.png",
     },
     {
         id: "light-gray",
         swatchColor: "#e7e7e7",
-        imageUrl: "img/Group 12.svg",
+        imageUrl: "/Haval/img/Group 12.svg",
     },
     {
         id: "grey",
         swatchColor: "#a1a1a1",
-        imageUrl: "img/серый-неметаллик.png",
+        imageUrl: "/Haval/img/серый-неметаллик.png",
     },
 ];
 
@@ -236,22 +235,22 @@ const colorVariantsDargo = [
     {
         id: "grey-drago",
         swatchColor: "#ADADAD",
-        imageUrl: "img/Агат.png",
+        imageUrl: "/Haval/img/Агат.png",
     },
     {
         id: "black-drago",
         swatchColor: "#000000",
-        imageUrl: "img/Черный-нефрит.png",
+        imageUrl: "/Haval/img/Черный-нефрит.png",
     },
     {
         id: "kvarc-drago",
         swatchColor: "#e7e7e7",
-        imageUrl: "img/Графитовый-кварц.png",
+        imageUrl: "/Haval/img/Графитовый-кварц.png",
     },
     {
         id: "orange-drago",
         swatchColor: "#a13a21",
-        imageUrl: "img/Терракотовый.png",
+        imageUrl: "/Haval/img/Терракотовый.png",
     },
 ];
 
@@ -318,7 +317,7 @@ function createColorOptions(container, colorVariants, imgElement, defaultColorId
 
             currentColorId = color.id;
             
-            // Плавная смена изображения
+            // смена изображения
             imgElement.style.opacity = "0.5";
             imgElement.style.transition = "opacity 0.3s ease";
             setTimeout(() => {
@@ -338,7 +337,7 @@ function createColorOptions(container, colorVariants, imgElement, defaultColorId
     });
 }
 
-// Добавляем стили
+// стили
 function addStyles() {
     if (!document.querySelector("#custom-styles")) {
         const style = document.createElement("style");
@@ -381,14 +380,14 @@ function addStyles() {
 function init() {
     addStyles();
     
-    // Инициализируем первый слайдер
+    // первый слайдер
     const container1 = document.querySelector('.color-options[data-slider="1"]');
     const img1 = document.querySelector('.carImage[data-slider="1"]');
     if (container1 && img1) {
         createColorOptions(container1, colorVariantsM6, img1, "grey");
     }
     
-    // Инициализируем второй слайдер
+    // второй слайдер
     const container2 = document.querySelector('.color-options[data-slider="2"]');
     const img2 = document.querySelector('.carImage[data-slider="2"]');
     if (container2 && img2) {
