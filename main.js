@@ -221,7 +221,7 @@ const colorVariantsM6 = [
     {
         id: "light-gray",
         swatchColor: "#e7e7e7",
-        imageUrl: "/Haval/img/Group 12.svg",
+        imageUrl: "/Haval/img/белый-неметаллик.png",
     },
     {
         id: "grey",
