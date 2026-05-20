@@ -39,11 +39,6 @@
   transition: var(--transition);
 }
 
-/* Эффект при наведении на таймер */
-.sinoby-timer[data-sinoby-reserve="sinoby-4yzf9d"]:hover {
-  transform: translateY(-5px);
-}
-
 .sinoby-timer[data-sinoby-reserve="sinoby-4yzf9d"]:hover .sinoby-digit {
   color: var(--blue) !important;
 }
@@ -145,7 +140,6 @@
 
   .sinoby-timer[data-sinoby-reserve="sinoby-4yzf9d"] {
     min-height: 80px;
-    transform: scale(0.95);
   }
 }
 
@@ -171,7 +165,6 @@
   }
 
   .sinoby-timer[data-sinoby-reserve="sinoby-4yzf9d"] {
-    transform: scale(0.85);
     min-height: 70px;
   }
 }
@@ -179,7 +172,6 @@
 
 @media (max-width: 360px) {
   .sinoby-timer[data-sinoby-reserve="sinoby-4yzf9d"] {
-    transform: scale(0.75);
     min-height: 60px;
   }
 
