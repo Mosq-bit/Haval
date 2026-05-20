@@ -190,7 +190,7 @@
         @media (max-width: 1024px) {
             .header__inner {
                 flex-wrap: wrap;
-                justify-content: center;
+                justify-content: space-between;
                 gap: 15px;
             }
 
