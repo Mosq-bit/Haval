@@ -301,7 +301,13 @@
 }
 @media (max-width: 600px) {
     .header__inner {
-        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .burger-btn{
+      margin-left: auto;
+    }
+    .header__tel{
+      font-size: 11px;
     }
 }
 @media (max-width: 480px) {
